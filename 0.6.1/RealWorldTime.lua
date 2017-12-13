@@ -11,11 +11,19 @@ Methods = {}
 -- Find "config.timeSyncMode" inside config.lua and set it to 2.
 
 
-Methods.GetHour = function()
-    local hour = tonumber(os.date("%H"))
-    local minute = tonumber(os.date("%M")) / 60 * 1
+local counter = 0
 
-    return hour + minute
+
+Methods.GetHour = function()
+    local hour = os.date("%H")
+
+    counter = counter + 0.00027777778
+    if counter >= 1 then
+        counter = 0
+    end
+
+    print (hour + counter)
+    return 1
 end
 
 
