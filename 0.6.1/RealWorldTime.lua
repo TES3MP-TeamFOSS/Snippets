@@ -22,7 +22,6 @@ Methods.GetHour = function()
         counter = 0
     end
 
-    print (hour + counter)
     return 1
 end
 
