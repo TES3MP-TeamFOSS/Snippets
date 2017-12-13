@@ -5,8 +5,6 @@ Methods = {}
 
 
 -- Add [ RealWorldTime = require("RealWorldTime") ] to the top of server.lua
-
--- Find "config.timeSyncMode == 2 then" insert server.lua and insert:
 -- hour = RealWorldTime.GetHour()
 -- directly underneath it.
 
